@@ -3,7 +3,7 @@
 Survey and Locations File
 =========================
 
-The survey and locations file is used to predict synthetic field data (forward modeling). This file contains all necessary survey information including: the number of transmitters, transmitter geometry, observation locations and frequencies. 
+The locations file is used to predict synthetic field data (forward modeling). This file defines the number of transmitters, transmitter geometry and the observation locations. Along with the :ref:`time gates file<gatesFile>`, this helps define all necessary survey information.
 
 .. note:: Bolded entries are fixed flags recognized by the Fortran codes and blue hyperlinked entries are values/regular expressions specified by the user
 
@@ -17,14 +17,12 @@ The lines of the survey file are formatted as follows:
 | :ref:`DEFINE TRANSMITTER<tdoctree_survey_transmitter>`
 | 
 | **N_RECV** :math:`\;` :ref:`n_recv<tdoctree_survey_ln2>`
-| **N_TIME** :math:`\;` :ref:`n_time<tdoctree_survey_ln3>`
 | :math:`\;\;` :ref:`Loc-Time Array<tdoctree_survey_ln4>`
 |
 |
 | :ref:`DEFINE TRANSMITTER<tdoctree_survey_transmitter>`
 |
 | **N_RECV** :math:`\;` :ref:`n_recv<tdoctree_survey_ln2>`
-| **N_TIME** :math:`\;` :ref:`n_time<tdoctree_survey_ln3>`
 | :math:`\;\;` :ref:`Loc-Time Array<tdoctree_survey_ln4>`
 |
 |
@@ -34,7 +32,6 @@ The lines of the survey file are formatted as follows:
 | :ref:`DEFINE TRANSMITTER<tdoctree_survey_transmitter>`
 |
 | **N_RECV** :math:`\;` :ref:`n_recv<tdoctree_survey_ln2>`
-| **N_TIME** :math:`\;` :ref:`n_time<tdoctree_survey_ln3>`
 | :math:`\;\;` :ref:`Loc-Time Array<tdoctree_survey_ln4>`
 |
 | *Repeat for number of unique transmitters*
@@ -62,13 +59,10 @@ Parameter Descriptions
 
     - **n_recv:** The number of receivers collecting field observations for a particular transmitter.
 
-.. _tdoctree_survey_ln3:
-
-    - **n_time:** The number of time channels for each receiver
 
 .. _tdoctree_survey_ln4:
 
-    - **Loc-Time Array:** Contains the X (Easting), Y (Northing), Z (elevation) locations and time channels for all receivers for a particular transmitter. It has has :ref:`n_recv<tdoctree_survey_ln2>` :math:`\times` :ref:`n_time<tdoctree_survey_ln2>` rows and 4 columns. The time-locations array is organized as follows:
+    - **Loc Array:** Contains the X (Easting), Y (Northing), Z (elevation) locations and time channels for all receivers for a particular transmitter. It has has :ref:`n_recv<tdoctree_survey_ln2>` :math:`\times` :ref:`n_time<tdoctree_survey_ln2>` rows and 4 columns. The time-locations array is organized as follows:
 
 |
 |  :math:`x_1 \;\; y_1 \;\; z_1 \;\; t_1`

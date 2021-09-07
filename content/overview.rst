@@ -6,8 +6,7 @@ Package overview
 Description
 -----------
 
-This manual provides instruction and background for the **H3DTD** program library for the forward
-modelling and inversion of time domain electromagnetic survey data. The program library provides codes to do the following:
+This manual provides instruction and background for the **H3DTD** program library for the forward modelling and inversion of time domain electromagnetic survey data. The program library provides codes to do the following:
 
     - Construct models on tensor meshes.
     - Forward model time domain magnetic field responses to a 3D volume of contrasting conductivity and/or magnetic susceptibility.
@@ -43,7 +42,7 @@ The main executable programs within the H3DTD program library are:
     - **h3dtd:** used to forward model TEM data for a conductivity (and a susceptibility) model
     - **h3dtdinv:** used to invert TEM data to recover a conductivity model
 
-Also included are the following Octree utility programs:
+Also useful are the following utility programs:
 
     - **blk3cell:** creates block models directly on tensor meshes
 

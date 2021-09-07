@@ -13,7 +13,7 @@ The main executable programs within the H3DTD program library are:
     - **h3dtd:** used to forward model TEM data for a conductivity (and a susceptibility) model
     - **h3dtdinv:** used to invert TEM data to recover a conductivity model
 
-Also included are the following Octree utility programs:
+Also useful are the following utility programs:
 
     - **blk3cell:** creates block models directly on tensor meshes
 
@@ -27,7 +27,6 @@ Here, we describe the main input files for executables contained with the H3DTD 
 
     Create tensor model <inputfiles/createModel>
     Forward modeling <inputfiles/forward>
-    Create face weights <inputfiles/weightsFiles>
     Inversion <inputfiles/inversion>
 
 
@@ -48,6 +47,7 @@ Here, we describe the formats of supporting files used to run H3DTD executable f
     Model File <files/model>
     Weights File <files/weights>
     Wave File <files/waveFile>
+    Bounds File <files/bounds>
 
 
 

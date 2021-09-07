@@ -1,7 +1,7 @@
 H3DTD Package
 =============
 
-h3dtd is a program library for carrying out forward modeling and inversion of time domain EM data over 3D structures. The contents of this manual are as follows:
+H3DTD is a program library for carrying out forward modeling and inversion of time domain EM data over 3D structures. The contents of this manual are as follows:
 
 .. toctree::
     :numbered:

@@ -20,7 +20,7 @@ The main executable programs within the H3DTD program library are:
     - **h3dtd:** used to forward model TEM data for a conductivity (and a susceptibility) model
     - **h3dtdinv:** used to invert TEM data to recover a conductivity model
 
-Also included are the following Octree utility programs:
+Also useful are the following utility programs:
 
     - **blk3cell:** creates block models directly on tensor meshes
 
