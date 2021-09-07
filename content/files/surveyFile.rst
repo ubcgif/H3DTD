@@ -1,9 +1,9 @@
 .. _surveyFile:
 
-Survey and Locations File
-=========================
+Locations File
+==============
 
-The locations file is used to predict synthetic field data (forward modeling). This file defines the number of transmitters, transmitter geometry and the observation locations. Along with the :ref:`time gates file<gatesFile>`, this helps define all necessary survey information.
+The locations file is used to predict synthetic field data (forward modeling). This file defines the number of transmitters, transmitter geometry and the observation locations. Along with the :ref:`time gates file<gatesFile>`, this defines all necessary survey information.
 
 .. note:: Bolded entries are fixed flags recognized by the Fortran codes and blue hyperlinked entries are values/regular expressions specified by the user
 
@@ -11,28 +11,26 @@ The locations file is used to predict synthetic field data (forward modeling). T
 The lines of the survey file are formatted as follows:
 
 |
-| **N_TRX** :math:`\;` :ref:`n_trx<tdoctree_survey_ln1>`
+| **N_TRX** :math:`\;` :ref:`n_trx<h3dtd_survey_ln1>`
 |
-|
-| :ref:`DEFINE TRANSMITTER<tdoctree_survey_transmitter>`
+| :ref:`DEFINE TRANSMITTER<h3dtd_survey_transmitter>`
 | 
-| **N_RECV** :math:`\;` :ref:`n_recv<tdoctree_survey_ln2>`
-| :math:`\;\;` :ref:`Loc-Time Array<tdoctree_survey_ln4>`
+| **N_RECV** :math:`\;` :ref:`n_recv<h3dtd_survey_ln2>`
+| :math:`\;\;` :ref:`Locations Array<h3dtd_survey_ln3>`
 |
+| :ref:`DEFINE TRANSMITTER<h3dtd_survey_transmitter>`
 |
-| :ref:`DEFINE TRANSMITTER<tdoctree_survey_transmitter>`
-|
-| **N_RECV** :math:`\;` :ref:`n_recv<tdoctree_survey_ln2>`
-| :math:`\;\;` :ref:`Loc-Time Array<tdoctree_survey_ln4>`
+| **N_RECV** :math:`\;` :ref:`n_recv<h3dtd_survey_ln2>`
+| :math:`\;\;` :ref:`Locations Array<h3dtd_survey_ln3>`
 |
 |
 | :math:`\;\;\;\;\;\; \vdots`
 |
 |
-| :ref:`DEFINE TRANSMITTER<tdoctree_survey_transmitter>`
+| :ref:`DEFINE TRANSMITTER<h3dtd_survey_transmitter>`
 |
-| **N_RECV** :math:`\;` :ref:`n_recv<tdoctree_survey_ln2>`
-| :math:`\;\;` :ref:`Loc-Time Array<tdoctree_survey_ln4>`
+| **N_RECV** :math:`\;` :ref:`n_recv<h3dtd_survey_ln2>`
+| :math:`\;\;` :ref:`Locations Array<h3dtd_survey_ln3>`
 |
 | *Repeat for number of unique transmitters*
 |
@@ -51,40 +49,31 @@ Parameter Descriptions
 ----------------------
 
 
-.. _tdoctree_survey_ln1:
+.. _h3dtd_survey_ln1:
 
     - **n_trx:** The total number of unique transmitters. Example: *N_TRX 3*
 
-.. _tdoctree_survey_ln2:
+.. _h3dtd_survey_ln2:
 
     - **n_recv:** The number of receivers collecting field observations for a particular transmitter.
 
+.. _h3dtd_survey_ln3:
 
-.. _tdoctree_survey_ln4:
-
-    - **Loc Array:** Contains the X (Easting), Y (Northing), Z (elevation) locations and time channels for all receivers for a particular transmitter. It has has :ref:`n_recv<tdoctree_survey_ln2>` :math:`\times` :ref:`n_time<tdoctree_survey_ln2>` rows and 4 columns. The time-locations array is organized as follows:
+    - **Locations Array:** Contains the X (Easting), Y (Northing), Z (elevation) locations for all receivers associated with a particular transmitter. The TEM response will be predicted at all times defined in the :ref:`time gates file <gatesFile>` . Thus for a single given transmitter, the locations array is organized as follows:
 
 |
-|  :math:`x_1 \;\; y_1 \;\; z_1 \;\; t_1`
-|  :math:`x_1 \;\; y_1 \;\; z_1 \;\; t_2`
-|  :math:`\; \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots`
-|  :math:`x_1 \;\; y_1 \;\; z_1 \;\; t_{n}`
-|  :math:`x_2 \;\; y_2 \;\; z_2 \;\; t_1`
-|  :math:`x_2 \;\; y_2 \;\; z_2 \;\; t_2`
-|  :math:`\; \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots`
-|  :math:`x_2 \;\; y_2 \;\; z_2 \;\; t_{n}`
-|  :math:`\; \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots`
-|  :math:`\; \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots`
-|  :math:`\; \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots`
-|  :math:`x_m \; y_m \; z_m \; t_1`
-|  :math:`x_m \; y_m \; z_m \; t_2`
-|  :math:`\; \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots`
-|  :math:`x_m \; y_m \; z_m \; t_{n}`
+|  :math:`x_1 \;\; y_1 \;\; z_1`
+|  :math:`x_2 \;\; y_2 \;\; z_2`
+|  :math:`x_3 \;\; y_3 \;\; z_3`
+|  :math:`x_4 \;\; y_4 \;\; z_4`
+|  :math:`x_5 \;\; y_5 \;\; z_5`
+|  :math:`\; \vdots \;\;\;\;\, \vdots \;\;\;\;\, \vdots`
+|  :math:`x_n \; y_n \; z_n`
 |
 |
 
 
-.. _tdoctree_survey_transmitter:
+.. _h3dtd_survey_transmitter:
 
 Defining Transmitters
 ---------------------

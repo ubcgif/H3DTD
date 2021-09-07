@@ -3,7 +3,7 @@
 Predicted Data File
 ===================
 
-predicted data files output from **tdoctree.exe** contain the locations and predicted data. The order of the data points is in the same order as the :ref:`survey and locations file <surveyFile>`. Each block, separated by a blank line, are the data for a particular transmitter. Thus predicted data files take the format:
+predicted data files output from **h3dtd.exe** contain the locations and predicted data. The order of the data points is in the same order as the :ref:`survey and locations file <surveyFile>`. Each block, separated by a blank line, are the data for a particular transmitter. Thus predicted data files take the format:
 
 |
 | **Data Array 1**
@@ -17,9 +17,8 @@ predicted data files output from **tdoctree.exe** contain the locations and pred
 |
 
 
-Data Array
-----------
-
+Standard Data Array
+-------------------
 
 For each transmitter, a set of field observations are made for a set of receivers. It has 13 columns. The rows of the data array are formatted as follows:
 

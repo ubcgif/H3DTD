@@ -34,6 +34,5 @@ To learn the specifics of running each executable, see the following sections:
 
     Creating Tensor Models <programs/createModel>
     Forward Modeling <programs/forward>
-    Additional Cell and Face Weights <programs/weightsFiles>
     Inversion <programs/inversion>
 

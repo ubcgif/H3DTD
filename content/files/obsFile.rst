@@ -12,69 +12,62 @@ The lines the observations file are formatted as follows:
 
 
 |
-| **IGNORE** :ref:`reg_exp<tdoctree_obs_ln0>`
+| **IGNORE** :ref:`reg_exp<h3dtd_obs_ln0>`
 |
-| **N_TRX** :math:`\;` :ref:`n_trx<tdoctree_obs_ln1>`
+| **N_TRX** :math:`\;` :ref:`n_trx<h3dtd_obs_ln1>`
 |
 |
-| :ref:`DEFINE TRANSMITTER<tdoctree_obs_transmitter>`
+| :ref:`DEFINE TRANSMITTER<h3dtd_obs_transmitter>`
 | 
-| **N_RECV** :math:`\;` :ref:`n_recv<tdoctree_obs_ln2>`
-| **N_TIME** :math:`\;` :ref:`n_time<tdoctree_obs_ln3>`
-| :math:`\;\;` :ref:`Data Array<tdoctree_obs_ln4>`
+| **N_RECV** :math:`\;` :ref:`n_recv<h3dtd_obs_ln2>`
+| **N_TIME** :math:`\;` :ref:`n_time<h3dtd_obs_ln3>`
+| :math:`\;\;` :ref:`Data Array<h3dtd_obs_ln4>`
 |
 |
-| :ref:`DEFINE TRANSMITTER<tdoctree_obs_transmitter>`
+| :ref:`DEFINE TRANSMITTER<h3dtd_obs_transmitter>`
 |
-| **N_RECV** :math:`\;` :ref:`n_recv<tdoctree_obs_ln2>`
-| **N_TIME** :math:`\;` :ref:`n_time<tdoctree_obs_ln3>`
-| :math:`\;\;` :ref:`Data Array<tdoctree_obs_ln4>`
+| **N_RECV** :math:`\;` :ref:`n_recv<h3dtd_obs_ln2>`
+| **N_TIME** :math:`\;` :ref:`n_time<h3dtd_obs_ln3>`
+| :math:`\;\;` :ref:`Data Array<h3dtd_obs_ln4>`
 |
 |
 | :math:`\;\;\;\;\;\;\;\;\;\; \vdots`
 |
 |
-| :ref:`DEFINE TRANSMITTER<tdoctree_obs_transmitter>`
+| :ref:`DEFINE TRANSMITTER<h3dtd_obs_transmitter>`
 |
-| **N_RECV** :math:`\;` :ref:`n_recv<tdoctree_obs_ln2>`
-| **N_TIME** :math:`\;` :ref:`n_time<tdoctree_obs_ln3>`
-| :math:`\;\;` :ref:`Data Array<tdoctree_obs_ln4>`
+| **N_RECV** :math:`\;` :ref:`n_recv<h3dtd_obs_ln2>`
+| **N_TIME** :math:`\;` :ref:`n_time<h3dtd_obs_ln3>`
+| :math:`\;\;` :ref:`Data Array<h3dtd_obs_ln4>`
 |
 | *Repeat for number of unique transmitters*
 |
 |
 
 
-.. .. figure:: images/files_locations.png
-..      :align: center
-..      :width: 400
-
-..      Example survey file with various types of transmitters.
-
-
 
 Parameter Descriptions
 ----------------------
 
-.. _tdoctree_obs_ln0:
+.. _h3dtd_obs_ln0:
 
     - **reg_exp:** A regular expression denoting which data are ignored during the inversion; examples include *-9999* and *NaN*
 
-.. _tdoctree_obs_ln1:
+.. _h3dtd_obs_ln1:
 
     - **n_trx:** The total number of unique transmitters. Example: *N_TRX 3*
 
-.. _tdoctree_obs_ln2:
+.. _h3dtd_obs_ln2:
 
     - **n_recv:** The number of receivers collecting field observations for a particular transmitter.
 
-.. _tdoctree_obs_ln3:
+.. _h3dtd_obs_ln3:
 
     - **n_time:** The number of time channels for each receiver
 
-.. _tdoctree_obs_ln4:
+.. _h3dtd_obs_ln4:
 
-    - **Data Array:** Contains the X (Easting), Y (Northing), Z (elevation) locations and time channels for all receivers for a particular transmitter. It has has :ref:`n_recv<tdoctree_obs_ln2>` :math:`\times` :ref:`n_time<tdoctree_obs_ln2>` rows and 22 columns. The time-locations array is organized as follows:
+    - **Data Array:** Contains the X (Easting), Y (Northing), Z (elevation) locations and time channels for all receivers for a particular transmitter. It has has :ref:`n_recv<h3dtd_obs_ln2>` :math:`\times` :ref:`n_time<h3dtd_obs_ln2>` rows and 22 columns. The time-locations array is organized as follows:
 
 .. math::
     \begin{align}
@@ -125,11 +118,11 @@ and :math:`dB/dt \; data` is in units T/s and is comprised of 6 columns:
     - The vertical component of dB/dt is represented using :math:`\mathbf{-dB_z/dt}` **!!!** This is done due to a common plotting convention. The associated uncertainties are still positive values however!
 
 
-.. _tdoctree_obs_transmitter:
+.. _h3dtd_obs_transmitter:
 
 Defining Transmitters
 ---------------------
 
-There are two types of transmitters that *TDoctree* survey files can use. These were defined in the :ref:`survey file section <tdoctree_obs_transmitter>`.
+There are two types of transmitters that *H3DTD* survey files can use. These were defined in the :ref:`survey file section <h3dtd_obs_transmitter>`.
 
 

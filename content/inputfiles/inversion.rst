@@ -118,7 +118,7 @@ Line Descriptions
 
 .. _h3dtd_input_inv_ln13:
 
-    - **Hard Constraints:** if the flag *SMOOTH_MOD* is used, the reference model is not included in the smoothness terms of the model objective function; i.e. we preserve structures in the reference model but not their boundaries. If the flag "SMOOTH_MOD_DIF" is used, the reference model is included in the smallness and smoothness terms of the model objective function; i.e. we preserve the structures and boundaries defined in the reference model. For more, see the `GIFtools cookbook<https://giftoolscookbook.readthedocs.io/en/latest/content/fundamentals/MrefInSmooth.html>`__ .
+    - **Hard Constraints:** if the flag *SMOOTH_MOD* is used, the reference model is not included in the smoothness terms of the model objective function; i.e. we preserve structures in the reference model but not their boundaries. If the flag "SMOOTH_MOD_DIF" is used, the reference model is included in the smallness and smoothness terms of the model objective function; i.e. we preserve the structures and boundaries defined in the reference model. For more, see the `GIFtools cookbook <https://giftoolscookbook.readthedocs.io/en/latest/content/fundamentals/MrefInSmooth.html>`__ .
 
 
 .. _h3dtd_input_inv_ln14:

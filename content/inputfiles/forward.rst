@@ -49,7 +49,7 @@ Line Descriptions
 
 .. _h3dtd_input_inv_ln3:
     
-    - **Conductivity Model:** Defines the conductivity model for the forward problem. There are two options:
+    - **Susceptibility Model:** Defines the conductivity model for the forward problem. There are two options:
 
         - *0:* A flag of *0* is entered if the susceptibility within the domain is zero
         - *FILE filepath:* The user enters the flag *FILE* followed by the path to the susceptibility :ref:`model file<modelFile>`

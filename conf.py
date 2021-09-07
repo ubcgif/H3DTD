@@ -59,7 +59,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'tdoctree'
+project = u'H3DTD'
 copyright = u'2015-2017, UBC-GIF'
 author = u'UBC-GIF'
 
@@ -118,8 +118,8 @@ todo_include_todos = False
 
 # -- Edit on Github Extension ---------------------------------------------
 
-edit_on_github_project = 'ubcgif/tdoctree'
-edit_on_github_branch = 'master'
+edit_on_github_project = 'ubcgif/h3dtd'
+edit_on_github_branch = 'main'
 check_meta = False
 
 
@@ -224,7 +224,7 @@ html_show_copyright = True
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'tdoctree'
+htmlhelp_basename = 'h3dtd'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -246,7 +246,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'tdoctreeManual.tex', u'tdoctree Documentation',
+  (master_doc, 'h3dtdManual.tex', u'H3DTD Documentation',
    u'UBC-GIF', 'manual'),
 ]
 
@@ -276,7 +276,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'tdoctreedoc', u'tdoctree Documentation',
+    (master_doc, 'h3dtddoc', u'H3DTD Documentation',
      [author], 1)
 ]
 
@@ -290,8 +290,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'tdoctreedoc', u'tdoctree Documentation',
-   author, 'tdoctreedoc', 'One line description of project.',
+  (master_doc, 'h3dtddoc', u'h3dtd Documentation',
+   author, 'h3dtddoc', 'One line description of project.',
    'Miscellaneous'),
 ]
 

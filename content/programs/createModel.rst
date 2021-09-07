@@ -1,23 +1,14 @@
-.. _tdoctree_model:
+.. _h3dtd_model:
 
 Create Model
 ============
 
-:ref:`Models<modelFile>` (conductivity) used within the this programming package are generated using **blk3cellOct.exe**. The model output by the executable is comprised of a set of overlapping rectangular blocks whose locations, dimensions and values are specified within the :ref:`input file<tdoctree_input_model>`; denoted here as **blk3cellOct.inp**.
+To generate the tensor model on the tensor mesh, open a command window. In order, enter the path to **blk3cell.exe**, followed by the path to the tensor mesh file name (**tensor_mesh.txt**), followed by the path to the :ref:`input file <h3dtd_blk3cell_input>` (denoted here as **blk3cell.inp**), followed by the desired name (or full path) for the output model file (denoted here as **3Dmodel.con**), all separated by spaces.
 
-.. note:: This workflow can also be used to create a model :ref:`weights file<weightsFile>`.
-
-
-To generate the model on the octree mesh, open a command window. Enter the path to **blk3cellOct.exe**, followed by the path to the :ref:`input file<tdoctree_input_model>`; denoted here as **blk3cellOct.inp**. 
-
-.. figure:: images/run_blk3cellOct.png
+.. figure:: images/run_create_model.png
      :align: center
-     :width: 500
+     :width: 700
 
-
-**blk3cellOct.exe** outputs a :ref:`model<modelFile>` which contains a single value for each cell in the octree mesh.
-
-
-
+**blk3cell.exe** outputs a :ref:`model<modelFile>` (**3Dmodel.con**) which contains a single value for each cell in the tensor mesh **3D_mesh.txt**.
 
 
