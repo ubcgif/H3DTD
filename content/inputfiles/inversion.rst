@@ -46,7 +46,7 @@ The inverse problem is solved using the executable program **h3dtdinv.exe**. The
      :align: center
      :width: 700
 
-     Example input file for the inversion program (`Download <https://github.com/ubcgif/h3dtd/raw/h3dtd/assets/input_files/h3dtdinv.inp>`__ ). Example input file for forward modeling only (`Download <https://github.com/ubcgif/h3dtd/raw/h3dtd/assets/input_files/h3dtdfwd.inp>`__ ).
+     Example input file for the inversion program (`Download <https://github.com/ubcgif/H3DTD/raw/main/assets/input_files/h3dtdinv.inp>`__ ).
 
 
 Line Descriptions

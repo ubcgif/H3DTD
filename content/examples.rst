@@ -3,24 +3,26 @@
 Examples
 ========
 
-Here, the program libraries for TDoctree version 1 will be used to:
+Standard dB/dt for Coincident Loop
+----------------------------------
 
-    - create an Octree mesh based on the survey
-    - create octree models
+Here, the program libraries for H3DTD will be used to forward model and invert simple airborne TDEM data
+for a coincident loop system. In this tutorial, we learn to:
+
+    - create block models on tensor meshes
     - predict TEM data for a synthetic model
     - invert TEM data created using our synthetic model
 
 Zip folders containing all necessary files can be downloaded here:
 
-    - `Files for example using TDoctree version 1 <https://github.com/ubcgif/tdoctree/raw/tdoctree/assets/tdoctree_v1_example.zip>`__
+    - `Standard airborne TDEM example <https://github.com/ubcgif/H3DTD/raw/main/assets/h3dtd_example_dbdt.zip>`__
 
-The full examples are parse into 4 sections:
+The full example is parsed into 3 sections:
 
 .. toctree::
     :maxdepth: 2
 
-    Create octree mesh <example/create_octree>
-    Create octree model <example/create_model>
-    Forward modeling <example/fwd>
-    Inversion <example/inv>
+    Create octree model <example_dbdt/create_model>
+    Forward modeling <example_dbdt/fwd>
+    Inversion <example_dbdt/inv>
 

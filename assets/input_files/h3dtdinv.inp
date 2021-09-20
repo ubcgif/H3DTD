@@ -1,0 +1,15 @@
+mesh.txt             ! tensor mesh
+VALUE 0.001          ! starting model
+VALUE 0.001          ! reference model
+dobs.dat             ! observed data
+wave.txt             ! waveform
+TOPO_CONST 0         ! topography
+IGNORE               ! unused line
+BOUNDS_NONE          ! bounds
+NONE                 ! cell and interface weights
+0.1 1e-8 0.25        ! trade-off parameter
+0.0001 1 1 1         ! alpha_s alpha_x alpha_y alpha_z
+CHANGE_MREF          ! CHANGE_MREF | NOT_CHANGE_MREF
+SMOOTH_MOD_DIF       ! SMOOTH_MOD | SMOOTH_MOD_DIF
+1                    ! chi factor
+3 30 0.001           ! iter_per_beta tol_ipcg max_iter_ipcg

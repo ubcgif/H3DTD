@@ -29,7 +29,7 @@ where superscript :math:`(i)` for :math:`i=1,2,...,N` refers to a particular blo
      :align: center
      :width: 700
 
-     Example input file for creating octree mesh (`Download <https://github.com/ubcgif/h3dtd/raw/main/assets/input_files/blk3cell.inp>`__ )
+     Example input file for creating octree mesh (`Download <https://github.com/ubcgif/H3DTD/raw/main/assets/input_files/blk3cell.inp>`__ )
 
 
 

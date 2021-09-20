@@ -28,7 +28,7 @@ The forward problem is solved using the executable program **h3dtd.exe**. The li
     :align: center
     :width: 700
 
-    Example input file for the inversion program (`Download <https://github.com/ubcgif/h3dtd/raw/main/assets/input_files/h3dtd.inp>`__ ). 
+    Example input file for the inversion program (`Download <https://github.com/ubcgif/H3DTD/raw/main/assets/input_files/h3dtd.inp>`__ ). 
 
 
 Line Descriptions
