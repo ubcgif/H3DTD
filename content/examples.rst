@@ -3,7 +3,7 @@
 Examples
 ========
 
-Standard dB/dt for Coincident Loop
+dB/dt for Coincident Loop Airborne
 ----------------------------------
 
 Here, the program libraries for H3DTD will be used to forward model and invert simple airborne TDEM data
@@ -15,7 +15,7 @@ for a coincident loop system. In this tutorial, we learn to:
 
 Zip folders containing all necessary files can be downloaded here:
 
-    - `Standard airborne TDEM example <https://github.com/ubcgif/H3DTD/raw/main/assets/h3dtd_example_dbdt.zip>`__
+    - `Standard airborne TDEM example <https://github.com/ubcgif/H3DTD/raw/main/assets/h3dtd_example_dbzdt.zip>`__
 
 The full example is parsed into 3 sections:
 

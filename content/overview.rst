@@ -9,10 +9,10 @@ Description
 This manual provides instruction and background for the **H3DTD** program library for the forward modelling and inversion of time domain electromagnetic survey data. The program library provides codes to do the following:
 
     - Construct models on tensor meshes.
-    - Forward model time domain magnetic field responses to a 3D volume of contrasting conductivity and/or magnetic susceptibility.
+    - Forward model time domain electromagnetic responses to a 3D volume of contrasting conductivity and/or magnetic susceptibility.
     - Invert of surface, borehole and/or airborne EM data to recover 3D conductivity models:
 
-The equations are discretized in time using backward Euler method and discretized in space by using a finite volume technique on a staggered grid. The sources can be grounded dipoles or loop currents that reside in the air, on the surface, or inside the earth. The responses can be any combination of components of E, H, or dB/dt. The transmitter waveform is user-defined and there are no restrictions on the length or shape of the waveform. Data can be simulated in the “on-time” or “off-time”. The earth model is an arbitrary 3D conductivity defined on a structured rectangular mesh. The earth can also have an arbitrary 3D magnetic susceptibility. The solutions are achieved by factorizing the forward modelling matrix and hence it is possible to simulate data from many sources. This is one of the major benefits of this approach.
+The equations are discretized in time using backward Euler method and discretized in space by using a finite volume technique on a staggered grid. The sources can be grounded dipoles or loop currents that reside in the air, on the surface, or inside the earth. The responses can be any combination of components of E, H, or dB/dt. As of October, 2021, the code is capable of modeling SAM data. The transmitter waveform is user-defined and there are no restrictions on the length or shape of the waveform. Data can be simulated in the “on-time” or “off-time”. The earth model is an arbitrary 3D conductivity defined on a structured rectangular mesh. The earth can also have an arbitrary 3D magnetic susceptibility. The solutions are achieved by factorizing the forward modelling matrix and hence it is possible to simulate data from many sources. This is one of the major benefits of this approach.
 
 The inversion is solved as an optimization problem with the simultaneous goals of (i)
 minimizing an objective function dependent on the model and (ii) generating synthetic
