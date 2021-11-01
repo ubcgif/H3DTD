@@ -22,7 +22,7 @@ The full example is parsed into 3 sections:
 .. toctree::
     :maxdepth: 2
 
-    Create octree model <example_dbdt/create_model>
+    Create tensor model <example_dbdt/create_model>
     Forward modeling <example_dbdt/fwd>
     Inversion <example_dbdt/inv>
 
