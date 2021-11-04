@@ -1,7 +1,7 @@
 .. _elements:
 
-Elements of the TDoctree version 1 package
-==========================================
+Elements of the H3DTD package
+=============================
 
 This section provides a brief description of each program in the H3DTD package. In addition, we describe the file formats for all input and supporting files used by the coding library.
 
