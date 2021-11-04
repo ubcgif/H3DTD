@@ -1,6 +1,6 @@
-mesh.txt             ! tensor mesh
-FILE model.con       ! FILE model_file | VALUE val
-0                    ! FILE model_file | VALUE val | 0
-survey.loc           ! survey file
-wave.txt             ! waveform file
-times.txt            ! time gates file
+mesh.txt            ! tensor mesh file
+FILE model.con      ! conductivity model
+0                   ! susceptibility model
+surveyTEM.loc       ! survey file
+waveform.txt        ! waveform file
+times.txt           ! time channels file

@@ -5,7 +5,7 @@ Create Model
 
 Here, the code **blk3cell.exe** and the input file **blk3cell.inp** (:ref:`see format <h3dtd_input_model>`) are used to create a conductivity model on the tensor mesh provided. Files relevant to this part of the example are in the sub-folder *tensor_model*. Before running this example, you may want to do the following:
 
-	- `Download and open the zip folder containing the entire H3DTD example <https://github.com/ubcgif/h3dtd/raw/main/assets/h3dtd_example_dbzdt.zip>`__ (if not done already)
+	- `Download and open the zip folder containing the entire H3DTD v2 example <https://github.com/ubcgif/h3dtd/raw/h3dtd_v2/assets/h3dtd_example_dbzdt.zip>`__ (if not done already)
 	- Learn how to run :ref:`blk3cell<h3dtd_model>` from command line
 	- Learn the format of the input files :ref:`blk3cell.inp<h3dtd_input_model>`
 

@@ -15,7 +15,7 @@ for a coincident loop system. In this tutorial, we learn to:
 
 Zip folders containing all necessary files can be downloaded here:
 
-    - `Standard airborne TDEM example <https://github.com/ubcgif/H3DTD/raw/main/assets/h3dtd_example_dbzdt.zip>`__
+    - `Standard airborne TDEM example <https://github.com/ubcgif/H3DTD/raw/h3dtd_v2/assets/h3dtd_example_dbzdt.zip>`__
 
 The full example is parsed into 3 sections:
 
