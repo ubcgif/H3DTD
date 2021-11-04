@@ -122,6 +122,6 @@ and :math:`dB/dt \; data` is in units T/s and is comprised of 6 columns:
 Defining Transmitters
 ---------------------
 
-There are two types of transmitters that *H3DTD* survey files can use. These were defined in the :ref:`survey file section <h3dtd_obs_transmitter>`.
+There are two types of transmitters that *H3DTD* survey files can use. These were defined in the :ref:`survey file section <h3dtd_survey_transmitter>`.
 
 
