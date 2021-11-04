@@ -15,10 +15,7 @@ predicted data files output from **h3dtd.exe** contain the locations and predict
 | **Data Array N**
 |
 |
-
-
-Standard Data Array
--------------------
+|
 
 For each transmitter, a set of field observations are made for a set of receivers. It has 13 columns. The rows of the data array are formatted as follows:
 

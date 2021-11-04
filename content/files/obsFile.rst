@@ -13,7 +13,6 @@ The lines the observations file are formatted as follows:
 
 |
 | **IGNORE** :ref:`reg_exp<h3dtd_obs_ln0>`
-|
 | **N_TRX** :math:`\;` :ref:`n_trx<h3dtd_obs_ln1>`
 |
 |

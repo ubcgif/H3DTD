@@ -66,18 +66,6 @@ order to use the software:
     2. Add this directory as new path to your environment variables.
     3. Make sure to create a separate directory for each new inversion, where all the associated files will be stored. Do not store anything in the bin directory other than executable applications and Graphical User Interface applications (GUIs).
 
-.. MPI Executables
-.. ^^^^^^^^^^^^^^^
-
-.. Message passaging interface (MPI) programming allows H3DTD to utilize parallel computing. Even if the code is being run on a single machine, the user is **required** to download the necessary MPI package to use the H3DTD executables. To set up MPI:
-
-..     1. Download and install:
-      
-..       - `Microsoft MPI v10.0 <https://www.microsoft.com/en-us/download/details.aspx?id=57467>`__ : Required for window machines
-..       - `MPICH <https://www.mpich.org/downloads/>`__ : Required for Linux machines
-..       - `Open MPI v4 <https://www.open-mpi.org/software/ompi/v4.0/>`__ : Optional programming to set MPI threads
-
-..     2. Path the folders containing MPI executables to your environment variables.
 
 
 
