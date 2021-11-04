@@ -13,7 +13,7 @@ To forward model the data, the following input file was used:
 
 .. figure:: ../inputfiles/images/fwd_input.png
      :align: center
-     :width: 700
+     :width: 500
 
 H3DTD forward models the Cartesian components of the electric field, magnetic field and the time derivative of the magnetic flux density. Below, we show dBz/dt at 0.0001 s, 0.001 s and 0.01 due to step-off excitation.
 

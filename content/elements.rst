@@ -23,7 +23,7 @@ Main Input Files
 Here, we describe the main input files for executables contained with the H3DTD coding package.
 
 .. tOcTree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     Create tensor model <inputfiles/createModel>
     Forward modeling <inputfiles/forward>

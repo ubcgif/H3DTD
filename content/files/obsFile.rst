@@ -94,7 +94,7 @@ Parameter Descriptions
 
 .. _h3dtd_obs_ln9999:
 
-    - **vx vy vz:** The x, y and z components of the unit vector defining the direction of the Earth's magnetic field. This line is only used when inverting SAM data.
+    - **vx vy vz:** The x, y and z components of the unit vector defining the direction of the Earth's magnetic field. This line is only used when inverting SAM data. Note that z is +ve downward and therefore *vz* is positive if the field is going into the Earth.
 
 .. _h3dtd_obs_ln0:
 
