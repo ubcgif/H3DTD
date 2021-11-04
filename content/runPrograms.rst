@@ -3,7 +3,7 @@
 Running the programs
 ====================
 
-This section provides describes how to run all executables pertaining to the H3DTD package.
+This section provides describes how to run all executables pertaining to the H3DTD v2 package.
 
 .. note::
 
@@ -17,8 +17,8 @@ This section provides describes how to run all executables pertaining to the H3D
 
 The main executable programs within the H3DTD program library are:
 
-    - **h3dtd:** used to forward model TEM data for a conductivity (and a susceptibility) model
-    - **h3dtdinv:** used to invert TEM data to recover a conductivity model
+    - **h3dtd_v2:** used to forward model TEM data for a conductivity (and a susceptibility) model
+    - **h3dtdinv_v2:** used to invert TEM data to recover a conductivity model
 
 Also useful are the following utility programs:
 

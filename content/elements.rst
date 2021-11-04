@@ -1,17 +1,17 @@
 .. _elements:
 
-Elements of the TDoctree version 1 package
-==========================================
+Elements of the H3DTD v2 package
+================================
 
-This section provides a brief description of each program in the H3DTD package. In addition, we describe the file formats for all input and supporting files used by the coding library.
+This section provides a brief description of each program in the H3DTD v2 package. In addition, we describe the file formats for all input and supporting files used by the coding library.
 
 Program Library
 ---------------
 
-The main executable programs within the H3DTD program library are:
+The main executable programs within the H3DTD v2 program library are:
 
-    - **h3dtd:** used to forward model TEM data for a conductivity (and a susceptibility) model
-    - **h3dtdinv:** used to invert TEM data to recover a conductivity model
+    - **h3dtd_v2:** used to forward model TEM data for a conductivity (and a susceptibility) model
+    - **h3dtdinv_v2:** used to invert TEM data to recover a conductivity model
 
 Also useful are the following utility programs:
 
@@ -33,7 +33,7 @@ Here, we describe the main input files for executables contained with the H3DTD 
 Supporting Files
 ----------------
 
-Here, we describe the formats of supporting files used to run H3DTD executable files. The input files for each executable program are described in the :ref:`running the programs<running>` section.
+Here, we describe the formats of supporting files used to run H3DTD v2 executable files. The input files for each executable program are described in the :ref:`running the programs<running>` section.
 
 .. toctree::
     :maxdepth: 1
