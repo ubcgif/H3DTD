@@ -9,16 +9,6 @@ The inversion is carried out using the **h3dtdinv.exe** executable program and a
      :align: center
      :width: 500
 
-.. Setting Number of Threads with Open MPI
-.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. Before running the executable, the number of threads used to carry out all simultaneous processes can be set with Open MPI. This is set in the command window **before** running the executable. To set the number of threads (*nThreads* ), use the following syntax:
-
-..     - Windows computer: "set OMP_NUM_THREADS=nThreads"
-..     - Linux (bash shell): "export OMP_NUM_THREADS=nThreads"
-..     - Linux (csh shell): "setenv OMP_NUM_THREADS nThreads"
-
-.. .. important:: The number of processes (*nFreq* ) times the number of threads (*nThreads* ) **cannot** exceed the total number of threads available from the computer.
 
 Units
 ^^^^^
@@ -40,17 +30,17 @@ Output Files
 
 The program **h3dtdinv.exe** creates the following output files:
 
-    .. - **dpred0.txt** data predicted using the starting model or forward model
+    - **dpred_0.txt** data predicted using the starting model or forward model
 
-    .. - **inv_xxx.con:** recovered model at iteration 'xxx'
+    - **inv_xx.con:** recovered model at iteration 'xx'
 
-    .. - **dpred_xxx.txt** data predicted using model 'xxx'
+    - **dpred_xx.txt** data predicted using model 'xx'
 
-    .. - **inv.con:** final conductivity model
+    - **inv.con:** final conductivity model
 
-    .. - **h3dtd.log:** log file for the inversion
+    - **h3dtd.log:** log file for the inversion
 
-    .. - **h3dtd.out:** stores details regarding the inversion
+    - **h3dtd.out:** stores details regarding the inversion
 
 
 

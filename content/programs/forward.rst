@@ -9,16 +9,7 @@ The forward problem is solved using the **h3dtd.exe** executable program and an 
      :align: center
      :width: 500
 
-.. Setting Number of Threads with Open MPI
-.. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. Before running the executable, the number of threads used to carry out all simultaneous processes can be set with Open MPI. This is set in the command window **before** running the executable. To set the number of threads (*nThreads* ), use the following syntax:
-
-..     - Windows computer: "set OMP_NUM_THREADS=nThreads"
-..     - Linux (bash shell): "export OMP_NUM_THREADS=nThreads"
-..     - Linux (csh shell): "setenv OMP_NUM_THREADS nThreads"
-
-.. .. important:: The number of processes (*nFreq* ) times the number of threads (*nThreads* ) **cannot** exceed the total number of threads available from the computer.
 
 Units
 ^^^^^
@@ -31,8 +22,6 @@ Units
     - **Reference/starting conductivity model:** S/m 
     - **Model/interface weights:** unitless
 
-
-.. important:: Any combination of data, electric and or magnetic field components, can be be inverted. A specified flag at the start of the observations file can be used to omit columns or individual datums.
 
 
 
