@@ -3,7 +3,7 @@
 Predicted Data File
 ===================
 
-predicted data files output from **h3dtd.exe** contain the locations and predicted data. The order of the data points is in the same order as the :ref:`survey and locations file <surveyFile>`. Each block, separated by a blank line, are the data for a particular transmitter. Thus predicted data files take the format:
+predicted data files output from **h3dtd_v2.exe** contain the locations and predicted data. The order of the data points is in the same order as the :ref:`survey and locations file <surveyFile>`. Each block, separated by a blank line, are the data for a particular transmitter. Thus predicted data files take the format:
 
 |
 | **Data Array 1**
@@ -17,10 +17,10 @@ predicted data files output from **h3dtd.exe** contain the locations and predict
 |
 
 
-Standard Data Array
--------------------
+Standard TEM Data
+-----------------
 
-For each transmitter, a set of field observations are made for a set of receivers. It has 13 columns. The rows of the data array are formatted as follows:
+Here we describe the predicted data file when modeling the Cartesian components of the fields (E, H and dB/dt). For each transmitter, a set of field observations are made for a set of receivers. It has 13 columns. The rows of the data array are formatted as follows:
 
 .. math::
 	\begin{align}
@@ -70,6 +70,37 @@ and :math:`dB/dt \; data` is in units T/s and is comprised of 3 columns:
 	- The data are represented in a left-handed coordinate system where X is Easting, Y is Northing and Z is +ve downward.
 	- The vertical component of dB/dt is represented using :math:`\mathbf{-dB_z/dt}` **!!!** This is done due to a common plotting convention.
 
+
+
+TEM SAM Data
+------------
+
+Here we describe the predicted data file when modeling sub-audio magnetic (SAM) data. For each transmitter, a set of field observations are made for a set of receivers. It has 5 columns. The rows of the data array are formatted as follows:
+
+.. math::
+    \begin{align}
+    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_1 \;\;\; B \\
+    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_2 \;\;\; B \\
+    &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
+    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_n \;\;\; B \\
+    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_1 \;\;\; B \\
+    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_2 \;\;\; B \\
+    &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
+    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_n \;\;\; B \\
+    &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
+    &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
+    &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
+    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_1 \;\;\; B \\
+    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_2 \;\;\; B \\
+    &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
+    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_n \;\;\; B
+    \end{align}
+
+
+|
+|
+
+where :math:`B` is a placeholder for a SAM datum.
 
 
 

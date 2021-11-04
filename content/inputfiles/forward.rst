@@ -3,7 +3,7 @@
 Forward Input File
 ==================
 
-The forward problem is solved using the executable program **h3dtd.exe**. The lines of input file are as follows:
+The forward problem is solved using the executable program **h3dtd_v2.exe**. The lines of input file are as follows:
 
 .. tabularcolumns:: |L|C|C|
 

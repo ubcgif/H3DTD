@@ -3,12 +3,14 @@
 Locations File
 ==============
 
-The locations file is used to predict synthetic field data (forward modeling). This file defines the number of transmitters, transmitter geometry and the observation locations. Along with the :ref:`time gates file<gatesFile>`, this defines all necessary survey information.
+The locations file is used to predict synthetic field data (forward modeling) using **h3dtd_v2.exe**. This file defines the number of transmitters, transmitter geometry and the observation locations. Along with the :ref:`time gates file<gatesFile>`, this defines all necessary survey information.
 
 .. note:: Bolded entries are fixed flags recognized by the Fortran codes and blue hyperlinked entries are values/regular expressions specified by the user
 
+Standard TEM Data
+-----------------
 
-The lines of the survey file are formatted as follows:
+This is used to model the Cartesian components of the fields (E, H and dB/dt). The lines of the survey file in this case are formatted as follows:
 
 |
 | **N_TRX** :math:`\;` :ref:`n_trx<h3dtd_survey_ln1>`
@@ -44,10 +46,47 @@ The lines of the survey file are formatted as follows:
      Example survey file with various types of transmitters.
 
 
+TEM SAM Data
+------------
+
+This is used to model the Sub-audio magnetic (SAM) data. The lines of the survey file in this case are formatted as follows:
+
+|
+| **B0** :math:`\;` :ref:`vx vy vz<h3dtd_survey_ln0>`
+| **N_TRX** :math:`\;` :ref:`n_trx<h3dtd_survey_ln1>`
+|
+| :ref:`DEFINE TRANSMITTER<h3dtd_survey_transmitter>`
+| 
+| **N_RECV** :math:`\;` :ref:`n_recv<h3dtd_survey_ln2>`
+| :math:`\;\;` :ref:`Locations Array<h3dtd_survey_ln3>`
+|
+| :ref:`DEFINE TRANSMITTER<h3dtd_survey_transmitter>`
+|
+| **N_RECV** :math:`\;` :ref:`n_recv<h3dtd_survey_ln2>`
+| :math:`\;\;` :ref:`Locations Array<h3dtd_survey_ln3>`
+|
+|
+| :math:`\;\;\;\;\;\; \vdots`
+|
+|
+| :ref:`DEFINE TRANSMITTER<h3dtd_survey_transmitter>`
+|
+| **N_RECV** :math:`\;` :ref:`n_recv<h3dtd_survey_ln2>`
+| :math:`\;\;` :ref:`Locations Array<h3dtd_survey_ln3>`
+|
+| *Repeat for number of unique transmitters*
+|
+|
+
+
+
 
 Parameter Descriptions
 ----------------------
 
+.. _h3dtd_survey_ln0:
+
+    - **vx vy vz:** The x, y and z components of the unit vector defining the direction of the Earth's magnetic field. This line is only used when modeling SAM data.
 
 .. _h3dtd_survey_ln1:
 
