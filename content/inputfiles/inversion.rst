@@ -84,7 +84,11 @@ Line Descriptions
 
 .. _h3dtd_input_inv_ln6:
 
-    - **Active Topography Cells:** Here, the user can choose to specify the cells which lie below the surface topography. To do this, the user may supply the file path to an active cells model file or type "ALL_ACTIVE". The active cells model has values 1 for cells lying below the surface topography and values 0 for cells lying above.
+    - **Active Topography Cells:** Defines the active cells in the inversion. Choices are:
+
+        - *TOPO_CONST val:* the flag 'TOPO_CONST' is followed by an elevation value for the topography
+        - *TOPO_FILE fname:* the flag 'TOPO_FILE' is followed by the path to an :ref:`active cells model<modelActiveFile>`
+        - *MNZ fname:* flag 'MNZ' is followed by the path to an MNZ file; which contains an N x 3 array denoting the ijk indices of active cells.
 
 .. _h3dtd_input_inv_ln7:
 
