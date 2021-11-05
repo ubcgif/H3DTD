@@ -123,10 +123,25 @@ where
 
 
 
+Custom galvanic source
+~~~~~~~~~~~~~~~~~~~~~~
 
+Galvanic sources are also defined using a set of wire segments with *TRX_LINES* ; except here we do not close the wire path. The block defining this transmitter is given by:
 
+|
+| *TRX_LINES*
+| :math:`N`
+| :math:`x_1 \;\;\; y_1 \;\;\; z_1`
+| :math:`x_2 \;\;\; y_2 \;\;\; z_2`
+| :math:`\; \vdots \;\;\;\;\;\, \vdots \;\;\;\;\;\, \vdots`
+| :math:`x_N \;\; y_N \;\; z_N`
+| 
+|
 
-
+where
+    - *TRX_LINES* is a flag that must be entered
+    - :math:`N` is the number of nodes (# segments - 1)
+    - :math:`x_i, \; y_i \; z_i` are Easting, Northing and elevation locations for the nodes
 
 
 
