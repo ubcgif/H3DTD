@@ -11,7 +11,7 @@ Here, the code **h3dtdinv_v2.exe** and the input file **h3dtdinv.inp** (:ref:`se
 
 To invert the synthetic data, the input file below was used:
 
-.. figure:: ../inputfiles/images/inv_input.png
+.. figure:: images/inv_input.png
      :align: center
      :width: 700
 

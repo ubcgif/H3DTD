@@ -11,7 +11,7 @@ Here, the code **h3dtd_v2.exe** and the input file **h3dtd.inp** (:ref:`see form
 
 To forward model the data, the following input file was used:
 
-.. figure:: ../inputfiles/images/fwd_input.png
+.. figure:: images/fwd_input.png
      :align: center
      :width: 500
 
