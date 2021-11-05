@@ -131,7 +131,6 @@ This is an inductive source. The circular loop transmitter is defined using two 
 |
 
 where
-
     - *TRX_LOOP* is a flag that must be entered
     - :math:`x` is the Easting, :math:`y` is the Northing and :math:`z` is the elevation location of the center of the loop
     - :math:`R` is the radius of the loop
@@ -139,8 +138,8 @@ where
     - :math:`\alpha` is the clockwise angle from northing in degrees
 
 
-Large inductive source
-~~~~~~~~~~~~~~~~~~~~~~
+Custom inductive source
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Here, we define the inductive source using a set of wire segments. When defining this type of transmitter, you **must** close the loop. The block defining this transmitter is given by:
 
@@ -155,20 +154,31 @@ Here, we define the inductive source using a set of wire segments. When defining
 |
 
 where
-
     - *TRX_LINES* is a flag that must be entered
     - :math:`N` is the number of nodes (# segments - 1)
     - :math:`x_i, \; y_i \; z_i` are Easting, Northing and elevation locations for the nodes
 
 
 
+Custom galvanic source
+~~~~~~~~~~~~~~~~~~~~~~
 
+Galvanic sources are also defined using a set of wire segments with *TRX_LINES* ; except here we do not close the wire path. The block defining this transmitter is given by:
 
+|
+| *TRX_LINES*
+| :math:`N`
+| :math:`x_1 \;\;\; y_1 \;\;\; z_1`
+| :math:`x_2 \;\;\; y_2 \;\;\; z_2`
+| :math:`\; \vdots \;\;\;\;\;\, \vdots \;\;\;\;\;\, \vdots`
+| :math:`x_N \;\; y_N \;\; z_N`
+| 
+|
 
-
-
-
-
+where
+    - *TRX_LINES* is a flag that must be entered
+    - :math:`N` is the number of nodes (# segments - 1)
+    - :math:`x_i, \; y_i \; z_i` are Easting, Northing and elevation locations for the nodes
 
 
 
