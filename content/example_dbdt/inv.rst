@@ -15,7 +15,7 @@ To invert the synthetic data, the input file below was used:
      :align: center
      :width: 700
 
-The inversion reached the target data misfit on 4th trade-off parameter on the second Gauss-Newton iteration (**inv_04_02.con**). This model (left) and the true model (right) are shown below. A cutoff of 0.025 S/m has been used for both models.
+The inversion reached the target data misfit on 4th trade-off parameter. The final model may slightly overfit the data, therefore we show the recovered model for the 4th trade-off parameter (left) and the true model (right) below. A cutoff of 0.025 S/m has been used for both models.
 
 .. figure:: images/inv.png
      :align: center
