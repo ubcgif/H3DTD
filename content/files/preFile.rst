@@ -79,28 +79,28 @@ Here we describe the predicted data file when modeling sub-audio magnetic (SAM) 
 
 .. math::
     \begin{align}
-    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_1 \;\;\; B \\
-    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_2 \;\;\; B \\
+    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_1 \;\;\; H_a \\
+    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_2 \;\;\; H_a \\
     &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
-    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_n \;\;\; B \\
-    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_1 \;\;\; B \\
-    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_2 \;\;\; B \\
+    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_n \;\;\; H_a \\
+    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_1 \;\;\; H_a \\
+    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_2 \;\;\; H_a \\
     &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
-    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_n \;\;\; B \\
+    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_n \;\;\; H_a \\
     &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
     &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
     &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
-    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_1 \;\;\; B \\
-    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_2 \;\;\; B \\
+    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_1 \;\;\; H_a \\
+    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_2 \;\;\; H_a \\
     &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
-    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_n \;\;\; B
+    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_n \;\;\; H_a
     \end{align}
 
 
 |
 |
 
-where :math:`B` is a placeholder for a SAM datum.
+where :math:`H_a` is a placeholder for a SAM datum. For *H3DTD v2*, SAM data is the projection of the anomalous magnetic field intensity (H-field) onto the direction of the Earth's magnetic field.
 
 
 

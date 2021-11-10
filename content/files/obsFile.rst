@@ -193,25 +193,25 @@ Contains the X (Easting), Y (Northing), Z (elevation) locations and time channel
 
 .. math::
     \begin{align}
-    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_1 \;\;\; B \;\;\; Unc \\
-    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_2 \;\;\; B \;\;\; Unc \\
+    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_1 \;\;\; H_a \;\;\; Unc \\
+    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_2 \;\;\; H_a \;\;\; Unc \\
     &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
-    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_n \;\;\; B \;\;\; Unc \\
-    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_1 \;\;\; B \;\;\; Unc \\
-    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_2 \;\;\; B \;\;\; Unc \\
+    &\;\, x_1 \;\;\; y_1 \;\;\; z_1 \;\;\; t_n \;\;\; H_a \;\;\; Unc \\
+    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_1 \;\;\; H_a \;\;\; Unc \\
+    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_2 \;\;\; H_a \;\;\; Unc \\
     &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
-    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_n \;\;\; B \;\;\; Unc \\
+    &\;\, x_2 \;\;\; y_2 \;\;\; z_2 \;\;\; t_n \;\;\; H_a \;\;\; Unc \\
     &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
     &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
     &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
-    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_1 \;\;\; B \;\;\; Unc \\
-    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_2 \;\;\; B \;\;\; Unc \\
+    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_1 \;\;\; H_a \;\;\; Unc \\
+    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_2 \;\;\; H_a \;\;\; Unc \\
     &\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots \\
-    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_n \;\;\; B \;\;\; Unc
+    &\; x_m \;\;\, y_m \;\;\, z_m \;\;\, t_n \;\;\; H_a \;\;\; Unc
     \end{align}
 
 
 |
 |
 
-where :math:`B` is a placeholder for a SAM datum and :math:`Unc` is a placeholder for its uncertainty.
+where :math:`H_a` is a placeholder for a SAM datum and :math:`Unc` is a placeholder for its uncertainty. For *H3DTD v2*, SAM data is the projection of the anomalous magnetic field intensity (H-field) onto the direction of the Earth's magnetic field.

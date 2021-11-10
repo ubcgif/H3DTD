@@ -16,7 +16,7 @@ Units
     - **Electric field data:** *Ex*, *Ey* and *Ez* in units V/m
     - **Magnetic field data:** *Hx*, *Hy* and *Hz* in units A/m. 
     - **Magnetic field data:** *dBx/dt*, *dBy/dt* and *-dBz/dt* in units T/s. The vertical component of dB/dt is represented using -dBz/dt due to a long-standing plotting convention 
-    - **SAM data:** The projection of the B-field along the direction of the Earth's magnetic field in units T
+    - **SAM data:** The projection of the anomalous H-field along the direction of the Earth's magnetic field in units A/m
     - **Conductivity model:** S/m
     - **Reference/starting conductivity model:** S/m 
     - **Model/interface weights:** unitless

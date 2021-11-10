@@ -15,7 +15,7 @@ To forward model the data, the following input file was used:
      :align: center
      :width: 500
 
-H3DTD v2 forward models the projection of the B-field along the direction of the Earth's magnetic field. Below, we show SAM data at 0.0001 s, 0.001 s and 0.01 due to step-off excitation.
+H3DTD v2 forward models the projection of the anomalouus H-field along the direction of the Earth's magnetic field. Below, we show SAM data at 0.0001 s, 0.001 s and 0.01 due to step-off excitation.
 
 .. figure:: images/fwd.png
      :align: center
