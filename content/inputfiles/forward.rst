@@ -10,17 +10,21 @@ The forward problem is solved using the executable program **h3dtd_v2.exe**. The
 +--------+--------------------------------------------------------------+----------------------------------------------------+
 | Line # | Description                                                  | Description                                        |
 +========+==============================================================+====================================================+
-| 1      | :ref:`Tensor Mesh<h3dtd_input_inv_ln1>`                      | path to tensor mesh file                           |
+| 1      | :ref:`Tensor Mesh<h3dtd_input_fwd_ln1>`                      | path to tensor mesh file                           |
 +--------+--------------------------------------------------------------+----------------------------------------------------+
-| 2      | :ref:`Conductivity Model<h3dtd_input_inv_ln2>`               | conductivity model                                 |
+| 2      | :ref:`Conductivity Model<h3dtd_input_fwd_ln2>`               | conductivity model                                 |
 +--------+--------------------------------------------------------------+----------------------------------------------------+
-| 3      | :ref:`Susceptibility Model (optional)<h3dtd_input_inv_ln3>`  | susceptibility model                               |
+| 3      | :ref:`Susceptibility Model (optional)<h3dtd_input_fwd_ln3>`  | susceptibility model                               |
 +--------+--------------------------------------------------------------+----------------------------------------------------+
-| 4      | :ref:`Locations File<h3dtd_input_inv_ln4>`                   | defines the survey geometry                        |
+| 4      | :ref:`Locations File<h3dtd_input_fwd_ln4>`                   | defines the survey geometry                        |
 +--------+--------------------------------------------------------------+----------------------------------------------------+
-| 5      | :ref:`Waveform File<h3dtd_input_inv_ln5>`                    | defines transmitter waveform and time-stepping     |
+| 5      | :ref:`Waveform File<h3dtd_input_fwd_ln5>`                    | defines transmitter waveform and time-stepping     |
 +--------+--------------------------------------------------------------+----------------------------------------------------+
-| 6      | :ref:`Time Gates File<h3dtd_input_inv_ln6>`                  | defines the observation times for predicted data   |
+| 6      | :ref:`Time Gates File<h3dtd_input_fwd_ln6>`                  | defines the observation times for predicted data   |
++--------+--------------------------------------------------------------+----------------------------------------------------+
+| 7      | :ref:`Solver<h3dtd_input_fwd_ln7>`                           | choose Pardiso or MUMPS solver                     |
++--------+--------------------------------------------------------------+----------------------------------------------------+
+| 8      | :ref:`Memory Options<h3dtd_input_fwd_ln8>`                   | store factorizations in RAM or write to disk       |
 +--------+--------------------------------------------------------------+----------------------------------------------------+
 
 
@@ -34,12 +38,12 @@ The forward problem is solved using the executable program **h3dtd_v2.exe**. The
 Line Descriptions
 ^^^^^^^^^^^^^^^^^
 
-.. _h3dtd_input_inv_ln1:
+.. _h3dtd_input_fwd_ln1:
 
     - **Tensor Mesh:** file path to the :ref:`tensor mesh<tensorFile>` file
 
 
-.. _h3dtd_input_inv_ln2:
+.. _h3dtd_input_fwd_ln2:
 
     - **Conductivity Model:** Defines the conductivity model for the forward problem. There are two options:
 
@@ -47,7 +51,7 @@ Line Descriptions
         - *VALUE val:* The user enters the flag *VALUE* followed by a value representing the conductivity of a wholespace model; e.g. we are modeling a wholespace if this option is used.
 
 
-.. _h3dtd_input_inv_ln3:
+.. _h3dtd_input_fwd_ln3:
     
     - **Susceptibility Model:** Defines the conductivity model for the forward problem. There are two options:
 
@@ -56,16 +60,31 @@ Line Descriptions
         - *VALUE val:* The user enters the flag *VALUE* followed by a value representing the susceptibility of a wholespace model; e.g. the same susceptibility value is assigned to every cell
 
 
-.. _h3dtd_input_inv_ln4:
+.. _h3dtd_input_fwd_ln4:
 
     - **Locations File:** Provide the path to the :ref:`locations file<surveyFile>`
 
 
-.. _h3dtd_input_inv_ln5:
+.. _h3dtd_input_fwd_ln5:
     
     - **Wave File:** Provide the path to the :ref:`wave file<waveFile>`. This file defines the transmitter current and time-stepping for the problem.
 
 
-.. _h3dtd_input_inv_ln6:
+.. _h3dtd_input_fwd_ln6:
 
     - **Time Gates File:** Provide the path to the :ref:`time gates file<gatesFile>`. This file defines the times at which the TEM data are measured for the forward problem.
+
+.. _h3dtd_input_fwd_ln7:
+    
+    - **Solver:** Define the direct solver that will be used to factor and solve linear systems. Enter one of the following flags:
+
+        - *FACTOR_PARDISO:* Factor and solve linear systems with Pardiso solver
+        - *FACTOR_MUMPS:* Factor and solve linear systems with MUMPS solver
+
+
+.. _h3dtd_input_fwd_ln8:
+
+    - **Memory Options:** Enter one of the following flags:
+
+        - *FACTOR_IC:* Store factorization in the computer's RAM. This options is much faster but can only be used on problems of a reasonable size
+        - *FACTOR_OOC:* Writes the factorizations of linear systems to disk. Slower but capable of solving much larger problems.

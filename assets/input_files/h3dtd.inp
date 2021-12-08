@@ -4,3 +4,5 @@ FILE model.con      ! conductivity model
 surveyTEM.loc       ! survey file
 waveform.txt        ! waveform file
 times.txt           ! time channels file
+FACTOR_PARDISO      ! FACTOR_PARDISO | FACTOR_MUMPS
+FACTOR_IC           ! FACTOR_IC | FACTOR_OOC

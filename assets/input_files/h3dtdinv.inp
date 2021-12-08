@@ -13,3 +13,5 @@ CHANGE_MREF       ! CHANGE_MREF | NOT_CHANGE_MREF
 SMOOTH_MOD_DIF    ! SMOOTH_MOD | SMOOTH_MOD_DIF
 1                 ! chi factor
 3 30 0.001        ! max_iter_beta max_iter_ipcg tol_ipcg
+FACTOR_PARDISO    ! FACTOR_PARDISO | FACTOR_MUMPS
+FACTOR_IC         ! FACTOR_IC | FACTOR_OOC

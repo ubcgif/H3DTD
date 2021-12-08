@@ -40,6 +40,10 @@ The inverse problem is solved using the executable program **h3dtdinv_v2.exe**. 
 +--------+-------------------------------------------------------------------+--------------------------------------------------------------+
 | 15     | :ref:`iter_per_beta tol_ipcg max_iter_ipcg<h3dtd_input_inv_ln15>` | parameters for Gauss-Newton iterations                       |
 +--------+-------------------------------------------------------------------+--------------------------------------------------------------+
+| 16     | :ref:`Solver<h3dtd_input_inv_ln16>`                               | choose Pardiso or MUMPS solver                               |
++--------+-------------------------------------------------------------------+--------------------------------------------------------------+
+| 17     | :ref:`Memory Options<h3dtd_input_inv_ln17>`                       | store factorizations in RAM or write to disk                 |
++--------+-------------------------------------------------------------------+--------------------------------------------------------------+
 
 
 .. figure:: images/inv_input.png
@@ -132,3 +136,18 @@ Line Descriptions
 .. _h3dtd_input_inv_ln15:
 
     - **iter_per_beta max_iter_ipcg tol_ipcg:** Here, *iter_per_beta* is the number of Gauss-Newton iterations performed for each beta value; see :ref:`cooling schedule <theory_cooling>`. *max_iter_ipcg* is the maximum number of iterations for the incomplete-preconditioned-conjugate gradient solve of the Gauss-Newton system, and *tol_ipcg* defines the tolerance (stopping criteria); see :ref:`Gauss-Newton solve<theory_IPCG>`
+
+.. _h3dtd_input_fwd_ln16:
+    
+    - **Solver:** Define the direct solver that will be used to factor and solve linear systems. Enter one of the following flags:
+
+        - *FACTOR_PARDISO:* Factor and solve linear systems with Pardiso solver
+        - *FACTOR_MUMPS:* Factor and solve linear systems with MUMPS solver
+
+
+.. _h3dtd_input_fwd_ln17:
+
+    - **Memory Options:** Enter one of the following flags:
+
+        - *FACTOR_IC:* Store factorization in the computer's RAM. This options is much faster but can only be used on problems of a reasonable size
+        - *FACTOR_OOC:* Writes the factorizations of linear systems to disk. Slower but capable of solving much larger problems.

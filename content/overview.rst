@@ -34,6 +34,14 @@ Cominco Exploration, Falconbridge, Hudson Bay Exploration and Development, INCO
 Exploration & Technical Services, Kennecott Exploration Company, Newmont Gold Company,
 Noranda Exploration, Placer Dome, and WMC.
 
+Highlights of H3DTD v2
+----------------------
+
+Since the release of this code (v1), the following improvements have been made:
+
+- the ability to model SAM data in addition to the Cartesian components of the E, H and dB/dt fields
+- implimentation of the latest Pardiso and MUMPS solvers; which greatly reduces the computation time compared to the iterative solver using in v1.
+
 
 Program Library Content
 -----------------------
